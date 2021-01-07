@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Styles for header */
@@ -12,7 +13,7 @@ nav {
     height: 50px;
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10pt;
+    font-size: 14px;
     position: absolute;
 }
 
@@ -21,17 +22,29 @@ nav {
 }
 
 ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+nav ul {
     padding: 20px;
     padding-right: 30px;
 }
 
 li {
-    display: inline;
+
     margin-left: 10px;
+    height: 100%;
 }
 
 a {
     text-decoration: none;
+}
+
+li img {
+    height: 30px;
 }
 
 /* Styles for main page */
@@ -45,27 +58,37 @@ main {
 }
 
 .searchForm {
-    border: 1px solid  #dfe1e5;
+    border: 1px solid #dfe1e5;
     border-radius: 10000px;
     width: 582px;
     height: 34px;
     margin-top: 30px;
 }
 
-.container{ 
+.container {
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
 }
 
-.searchBar{
+.searchIcon {
+    height: 100%;
+    padding: 5px;
+}
+
+.icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.searchBar {
     flex: 1;
 }
 
 input {
-    
-    border:none;
+    border: none;
     outline: none;
     line-height: 34px;
     background-color: transparent;
@@ -73,4 +96,49 @@ input {
     height: 100%;
 }
 
+.formButtons {
+    margin-top: 30px;
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
 
+button {
+    background-color: #f8f9fa;
+    color: #3c4043;
+    border: 1px solid #f8f9fa;
+    margin: 11px 4px;
+    padding: 0 16px;
+    font-size: 14px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+}
+
+button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/* footer styles */
+
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #f2f2f2;
+    height: 40px;
+    border-top: 1px solid #dadce0;
+    padding: 10px 15px 20px 15px;
+    font-size: 14px;
+}
+
+footer li {
+    margin-right: 15px;
+}
